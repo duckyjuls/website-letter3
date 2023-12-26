@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter 3</title>
+    <style>
+      body {
+      margin: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'baskerville old face', sans-serif;
+  }
+
+  #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+  }
+
+  #outer-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+  }
+
+  #frame {
+      border: 2px solid #333;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+      background-color: aliceblue; 
+  }
+
+  #background::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('flower.gif') no-repeat fixed center center;
+      background-size: cover;
+      pointer-events: none;
+      z-index: -1;
+  }
+
+  .text-container {
+      text-align: center;
+      color: black;
+      max-width: 500px;
+      padding: 20px;
+      margin: 30px auto;
+  }
+
+  #duck-img,
+  #bear-img {
+      position: fixed;
+      width: 150px;
+      height: 150px;
+  }
+
+  #duck-img {
+      top: 10px;
+      left: 10px;
+  }
+
+  #bear-img {
+      top: 10px;
+      right: 10px;
+  }
+
+    </style>
+</head>
+
+<body>
+    <img id="background" src="flower.gif" alt="Background Gif">
+    <div id="outer-container">
+        <div id="frame">
+            <div class="text-container">
+                <h3> <br> -`♡´--`♡´--`♡´--`♡´--`♡´--`♡´--`♡´--`♡´--`♡´-</br> <br></br>
+you’ve now made it to the last part of your christmas present. this is the last letter for now, and i hope that you have enjoyed your little gift so far. i’ve put a lot of work into this, and as it was my first time coding, this project took me a lot of time. however, i still enjoyed every second of creating this, as i was doing it for you, and i’ve been really excited for you to see it, i’ve put a lot of love into this, just how our relationship is packed with love. no matter what happens, it is the endless amount of love we have for each other that makes us stick together even through hard times. nothing in this world compares to this love because there is no one else like you on this planet.
+alex, you truly are my soulmate, you’re the one my heart always yearned for, and you’ve brought so much happiness and laughter into my life. i’ve always admired you, you can easily make me forget all the bad things and just make me smile, it seems like you are simply a natural in everything you do. you can read me like an open book, which is scary sometimes. i admire you for how far you came, i admire your desire to do right, i admire how smart and eloquent you are, everything about you just seems so perfect. i consider myself a helpless case, i’ve fallen in love with you too hard, and i fall for you more and more everyday. it’s like a never ending free-fall into the most wonderful feeling. i love that you are my bear and i am your duck, and i promise to be your duck for all eternity. i love how you have changed your old habits for the sake of us, i know it wasn’t easy, but i will be forever grateful for this. i can’t wait to grow old with you, i’m longing for the day when i can officially call you my husband. but i already vow to you now that i will forever embed you in my love, i will turn your future into something you can always look forward to. i can promise you that i have locked you deeply in my heart (there is no escape for you). i wish i could already feel the experience of being in your arms, falling asleep to the sound of your heartbeat. i also secretly wish to be able to punch you in your arms to prove that my punches are more than just massages ‹𝟹.
+but i know that it will come soon, i will feel fulfilled once this day arrives.
+you’ve made it to the end of the letter. i just want to thank you for being by my side and making me feel so loved, i hope that you enjoyed your present, i put a lot of work into this, and in case you haven't already, try clicking on the duck and bear.
+before it ends, i just want to clarify that when i say ‘i love you’, it’s not just simply because it has become a habit, every time i say it, it resonates with the profound depths of my heart.
+<br>i love you alex.</br>
+
+<br> -`♡´--`♡´--`♡´--`♡´--`♡´--`♡´--`♡´--`♡´--`♡´-</br>
+</h3>
+            </div>
+        </div>
+        <img id="duck-img" src="duckwithheart.png" alt="Duck Image" onclick="playDuckSound()">
+        <img id="bear-img" src="bearwithheart.png" alt="Bear Image" onclick="playBearSound()">
+    </div>
+
+    <script>
+        function playDuckSound() {
+          new Audio('duckquack.mp3').play();
+}
+
+        function playBearSound() {
+            new Audio('bearsound.mp3').play();
+        }
+    </script>
+</body>
+
+</html>
